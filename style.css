@@ -1,3 +1,62 @@
+body{
+    overflow-x: hidden;
+}
+
+/* gallery part*/
+.galeery-img{
+    backface-visibility: hidden;
+    transition: all .5s;
+
+}
+.galeery-img:hover{
+    transform: scale(1.05);
+
+}
+
+.first-row{
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+.second-row{
+    transform: translateX(300px);
+    opacity: 0;
+    transition: all 2.5s;
+}
+
+
+.change .first-row, .change .second-row{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* gallery part end */
+/* --------------------------------------------------------------------- */
+/* title */
+.style-title{
+    display: inline-block;
+font-size: 3rem;
+font-weight: 500;
+text-shadow: 2px 2px 5px #aaa;
+transition: all .5s;
+}
+
+.style-title:first-letter{
+    font-family: 'Great Vibes',cursive;
+    font-size: 5rem;
+    margin-right: 10px;
+    font-style: normal;
+    }
+
+.style-title:hover{
+        transform: translate(-5px,-3px);
+        text-shadow: 2px 4px 21px #aaa;
+        }
+/* title over */
+/* --------------------------------------------------------------------- */
+
+/* header part */
 header{
     height: 100vh;
     background:linear-gradient(rgb(0,0,0,5.4),rgb(0,0,0,0.6)),url('Images/background.jpg') no-repeat center center /cover;
@@ -40,3 +99,5 @@ header{
         transform:scale(1);
     }
 }
+
+/* header part over */
