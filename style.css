@@ -2,6 +2,17 @@ body{
     overflow-x: hidden;
 }
 
+
+
+
+
+/* famous places */
+
+.famous-places{
+    background:linear-gradient(rgb(250,250,250,0.8),rgb(250,250,250,0.9)),url('Images/fb4.jfif') no-repeat center center /cover;
+}
+
+/* fa,ous places over */
 /* gallery part*/
 .galeery-img{
     backface-visibility: hidden;
