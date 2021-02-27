@@ -4,8 +4,226 @@ body{
 
 
 
+/* navbar */
+
+.hamburger-menu{
+    width:65px;
+    height:65px;
+    background: #717b82;
+    position: fixed;
+    top:30px;
+    right:30px;
+    z-index:200;
+    border-radius:50%;
+    outline:none!important;  
+    opacity: .7;  
+    transition: all .5s;
+}
+
+.nav-content{
+    position: fixed;
+    z-index:200;
+    
+
+}
 
 
+
+.bg-cover{
+    background: rgba(35,37,40,.98);
+    width: 55px;
+    height:55px;
+    position:fixed;
+    top:35px;
+    right:35px;
+    z-index:100;
+    border-radius:50%;
+    transition: all .5s;
+
+}
+
+
+.line1,
+.line2,
+.line3{
+    width: 30px;
+    height:2px;
+    background: #eee;
+    margin:5px;
+    transition: all .5s;
+
+}
+
+
+.change .line1{
+    transform: rotate(-405deg) translate(-5px,5px);
+    background:#777 ;
+
+}
+
+
+.change .line2{
+    opacity:0;
+}
+
+
+.change .line3{
+    transform:rotate(405deg) translate(-5px,-5px);
+    background:#777 ;
+}
+
+
+.change .hamburger-menu{
+    background: #eef0eb;
+}
+
+
+.change .bg-cover{
+    transform: scale(150);
+}
+
+/* navbar over */
+
+
+/* popular places */
+
+.popular-places{
+    position: relative;
+
+}
+
+.video-container{
+    position: absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+
+.bg-video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.place-card{
+    position: relative;
+    box-shadow: 5px 15px 50px #aaa;
+    max-width:420px;
+    overflow: hidden;
+    transition: all .8s;
+}
+
+.rotate{
+    perspective: 100rem;
+}
+
+.back{
+    position:absolute;
+    top:-100%;
+    background: #fefefe;
+    height: 100%;
+    width: 100%;
+    opacity: 0%;
+    user-select: none;
+    pointer-events: none;
+    transform:rotateY(180deg);
+    transition:top .8s,opacity .4s;
+}
+
+
+.back-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+}
+
+
+.rotate:hover .place-card{
+   transform: rotateY(180deg);
+}
+
+
+.rotate:hover .back{
+    opacity: 1;
+    top:0;
+    user-select: auto;
+    pointer-events: auto;
+    
+}
+/* popular places over */
+
+
+/* contact */
+.contact{
+    background:linear-gradient(rgb(250,250,250,0.8),rgb(250,250,250,0.9)),url('Images/fb4.jfif') no-repeat center center /cover;
+}
+
+
+
+/* contact over */
+
+/* suggested Places */
+
+.suggested-places{
+    height:100vh;
+    background:url('Images/wood2.jpg') repeat center /cover;
+
+}
+
+.places{
+    position: relative;
+    height: 50vh;
+}
+
+
+.place{
+    width:37%;
+    position: absolute;
+    box-shadow: 5px 5px 15px rgb(59, 57, 57);
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #bbb;
+    transition: all .7s ease-in-out;
+}
+
+
+.place-1{
+    top:3%;
+    left:3%;
+    transform: rotate(-45deg);
+}
+
+.place-2{
+    top:30%;
+    left:40%;
+    transform: rotate(10deg);
+}
+
+.place-3{
+    top:60%;
+    left:1%;
+    transform: rotate(8deg);
+}
+
+.place-4{
+    top:70%;
+    left:70%;
+    transform: rotate(-36deg);
+}
+
+
+.place:hover{
+    transform:scale(1.3) rotateX(20deg);
+    z-index: 200;
+    box-shadow: 5px 5px 25px rgb(58, 55, 55);
+    border-right: 2px solid #ddd;
+    border-bottom: 2px solid #bbb;
+}
+/* suggested places over */
 /* famous places */
 
 .famous-places{
@@ -112,3 +330,17 @@ header{
 }
 
 /* header part over */
+/* footer */
+.footer-link{
+    color:rgb(80, 74, 74);
+    font-size:13px;
+    transition: all .3s;
+}
+
+.footer-link:hover{
+    color:#70aed2;
+    text-decoration: none;
+   
+}
+
+/* footer over */

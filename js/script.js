@@ -27,4 +27,11 @@ jQuery(function() {
         };
 
     })
+
+
+
+
+    $('.hamburger-menu').click(function(){
+        $('.navigation').toggleClass('change');
+    })
 })
