@@ -30,8 +30,7 @@ jQuery(function() {
 
 
 
-
-    $('.hamburger-menu').click(function(){
+    $('.hamburger-menu').click(function() {
         $('.navigation').toggleClass('change');
-    })
+    });
 })
